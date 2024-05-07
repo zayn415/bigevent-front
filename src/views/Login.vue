@@ -90,11 +90,11 @@ const clearForm = () => {
         </el-form-item>
         <el-form-item prop = "rePassword">
           <el-input v-model = "registerData.rePassword" :prefix-icon = "Lock" type = "password"
-                    placeholder = "请再次输入密码"></el-input>
+                    placeholder = "请再次输入密码" ></el-input>
         </el-form-item>
         <!-- 注册按钮 -->
         <el-form-item>
-          <el-button class = "button" type = "primary" auto-insert-space @click = "register" @keydown.enter="register">
+          <el-button class = "button" type = "primary" auto-insert-space @click = "register">
             注册
           </el-button>
         </el-form-item>
@@ -124,7 +124,7 @@ const clearForm = () => {
         </el-form-item>
         <!-- 登录按钮 -->
         <el-form-item>
-          <el-button class = "button" type = "primary" auto-insert-space @click = "login" @keydown.enter="login">登录</el-button>
+          <el-button class = "button" type = "primary" auto-insert-space @click = "login">登录</el-button>
         </el-form-item>
         <el-form-item class = "flex">
           <el-link type = "info" :underline = "false" @click = "isRegister = true; clearForm()">
